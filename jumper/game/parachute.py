@@ -29,7 +29,7 @@ class Parachute:
         for i in range(8):
             if i <= (7 - check):
                 continue
-            parachute_img = '\033[1;30;43m {self._line[i]} \033[0m' 
+            parachute_img =f'\033[1;30;43m {self._line[i]} \033[0m' 
             print(parachute_img)
 
             
