@@ -3,9 +3,9 @@ class Parachute:
     based on how well the user responds correctly"""
 
     def __init__(self):
-        """constructor: a list of lines"""
-        # The symbols are used for the game graph 
-        # is that a syntax for it ?
+        """constructor: a list of lines, the line1 to line8 are symbols to draw the parachute, the details are shown in the show method how they will be displayed"""
+        #Issue solved by the team initiated by Yves Cyril
+    
         self._line1 = " / \ "
         self._line2 = " /!\ "
         self._line3 = "  o  "
