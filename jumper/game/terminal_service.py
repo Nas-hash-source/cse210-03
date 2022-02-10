@@ -6,9 +6,9 @@ class TerminalService:
     terminal.
     """
 
-    def read_text(self, prompt):
+    def _read_text(self, prompt):
         """Gets text input from the terminal. Directs the user with the given prompt.
-
+     Yves: I converted this method from public to private because we need to accomplish the requirement of the encapsulation
         Args: 
            self (TerminalService): An instance of TerminalService.
            prompt (string): The prompt to display on the terminal.
@@ -20,7 +20,7 @@ class TerminalService:
     
                
 
-    def write_text(self, text):
+    def _write_text(self, text):
         """Displays the given text on the terminal. 
 
         Args: 
@@ -28,3 +28,6 @@ class TerminalService:
             text (string): The text to display.
         """
         print(f'\n\033[1;37;41m {text} \033[0m\n')
+# Yves I also changed these methods to private because i made some
+# modification parachite if not the game would not be funtional.
+# these changes were made by Yves          

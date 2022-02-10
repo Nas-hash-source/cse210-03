@@ -35,7 +35,7 @@ class Director:
         #get the input
         # Changes added by Hector Olivares Tapia as result of cse210 assignment. #
         ask_letter = '\033[1;30;43m Guess a letter [a-z]: \033[0m' 
-        self._user_guess = self._terminal_service.read_text(ask_letter) 
+        self._user_guess = self._terminal_service._read_text(ask_letter) 
 
         #Process the input into the output
         #Replacing the dash in the blank word which is the length of the random word with the corrected letters
@@ -81,4 +81,4 @@ class Director:
             self._is_ending = False
             # Changes added by Hector Olivares Tapia as result of cse210 assignment. #
             end_game = ' Game Over ¨.¨ '
-            self._terminal_service.write_text(end_game)    
+            self._terminal_service._write_text(end_game)    

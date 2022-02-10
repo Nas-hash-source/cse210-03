@@ -25,7 +25,7 @@ class Word:
             blank.append(" _")
         # Changes added by Hector Olivares Tapia as result of cse210 assignment. #    
         hint = f' The word that we are searching for has {i+1} letters.'
-        self._terminal_service.write_text(hint)           
+        self._terminal_service._write_text(hint)           
         return blank
 
 
@@ -36,7 +36,7 @@ class Word:
             printblank += i
         
         # Changes added by Hector Olivares Tapia as result of cse210 assignment. #
-        self._terminal_service.write_text(printblank)
+        self._terminal_service._write_text(printblank)
         j = 0
         for k in range(len(printblank)) :
             if '_' == printblank[k] :
@@ -46,5 +46,5 @@ class Word:
             missing_letters = f' Just there are {j} missing letters. Go ahead! ' 
         else:
             missing_letters = f' You did it ^.^ '           
-        self._terminal_service.write_text(missing_letters)        
+        self._terminal_service._write_text(missing_letters)        
         return printblank
